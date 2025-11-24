@@ -1,22 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   margin: 40px;
   background-color: #fdfdfd;
   color: #333;
+  line-height: 1.6;   /* adds line spacing */
+  font-size: 18px;    /* larger text */
 }
 
 h1 {
   color: #004080;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #003366;
+}
+
+p {
+  margin-bottom: 20px; /* adds space between paragraphs */
 }
 
 nav {
-  margin-bottom: 20px;
+  margin: 20px 0;
+  text-align: center;
 }
 
 nav a {
   text-decoration: none;
-  margin-right: 15px;
+  margin: 0 10px;
   color: #004080;
+  font-weight: bold;
 }
 
 nav a:hover {
