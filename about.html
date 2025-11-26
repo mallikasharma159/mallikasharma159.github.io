@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Simple Icons (via CDN) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/css/simple-icons.min.css">
   <meta charset="UTF-8">
-  <title>About Me | Mallika Sharma</title>
+  <title>Mallika Sharma | Economics, UCalgary</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Simple Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/css/simple-icons.min.css">
   <style>
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 40px;
+    }
+    .about-container img {
+      width: 280px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #aaa;
+    }
+    .about-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+    }
     .skills-container {
       display: flex;
       justify-content: center;
@@ -29,13 +46,12 @@
       margin-bottom: 15px;
       color: #003366;
     }
-    .skills-banner ul {
-      list-style-type: none;
-      padding: 0;
+    .skills-banner div {
       text-align: center;
+      font-size: 40px;
     }
-    .skills-banner li {
-      margin: 8px 0;
+    .skills-banner i {
+      margin: 10px;
     }
   </style>
 </head>
@@ -44,44 +60,46 @@
   <!-- Navigation bar -->
   <nav style="text-align:center; background-color:#003366; padding:15px;">
     <a href="index.html" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:white; margin:0 15px; text-decoration:none;">About Me</a>
     <a href="research.html" style="color:white; margin:0 15px; text-decoration:none;">Research</a>
     <a href="teaching.html" style="color:white; margin:0 15px; text-decoration:none;">Teaching</a>
     <a href="cv.html" style="color:white; margin:0 15px; text-decoration:none;">CV</a>
     <a href="contact.html" style="color:white; margin:0 15px; text-decoration:none;">Contact</a>
-    <a href="about.html" style="color:white; margin:0 15px; text-decoration:none;">About Me</a>
   </nav>
 
-  <div style="max-width:900px; margin:40px auto; font-size:18px; line-height:1.7;">
-    <h1 style="text-align:center;">About Me</h1>
+  <!-- About section with photo on left -->
+  <div class="about-container">
+    <img src="mallikasharma.JPG" alt="Mallika Sharma">
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>
+        I am a Ph.D. candidate in Economics specializing in energy and environmental economics, with both professional and academic grounding in energy and environmental policy. 
+        I bring experience to the evolving landscape of sustainable transportation, mainly electric vehicles and public infrastructure policy. 
+        My research focuses on electric vehicle (EV) charging behavior, infrastructure incentives, and demand-side energy management—leveraging high-resolution data and econometric modelling to inform policy and investment decisions.
+      </p>
+      <p>
+        With over 3 years of experience across Canada, India, and the UK (including roles at CDP and Ford where I contributed to flagship climate reports and datasets), I have assisted in field experiments with major utilities and collaborated on policy-relevant research with leading economists. 
+        My work bridges the gap between data and decision-making, helping shape evidence-based strategies for net-zero transitions. 
+        I am actively seeking economist or research-oriented roles in think tanks, public institutions, or policy-focused organizations where I can apply my expertise to drive impactful change in energy systems, climate governance, and infrastructure planning.
+      </p>
+      <p>
+        Eager to contribute to teams working at the intersection of transportation electrification, data science, and public policy. 
+        I’d love to connect if this aligns with your mission and a conversation on clean transportation.
+      </p>
+    </div>
+  </div>
 
-    <p>
-      I am a Ph.D. candidate in Economics specializing in energy and environmental economics, with both professional and academic grounding in energy and environmental policy. 
-      I bring experience to the evolving landscape of sustainable transportation, mainly electric vehicles and public infrastructure policy. 
-      My research focuses on electric vehicle (EV) charging behavior, infrastructure incentives, and demand-side energy management—leveraging high-resolution data and econometric modelling to inform policy and investment decisions.
-    </p>
+  <!-- Skills section -->
+  <h2 style="text-align:center; margin-top:40px;">Skills</h2>
+<p style="text-align:center;">
+  Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
+</p>
 
-    <p>
-      With over 3 years of experience across Canada, India, and the UK (including roles at CDP and Ford where I contributed to flagship climate reports and datasets), I have assisted in field experiments with major utilities and collaborated on policy-relevant research with leading economists. 
-      My work bridges the gap between data and decision-making, helping shape evidence-based strategies for net-zero transitions. 
-      I am actively seeking economist or research-oriented roles in think tanks, public institutions, or policy-focused organizations where I can apply my expertise to drive impactful change in energy systems, climate governance, and infrastructure planning.
-    </p>
-
-    <p>
-      Eager to contribute to teams working at the intersection of transportation electrification, data science, and public policy. 
-      I’d love to connect if this aligns with your mission and a conversation on clean transportation.
-    </p>
-
-    <h2 style="margin-top:40px; text-align:center;">Skills</h2>
-    <p style="text-align:center;">
-      Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
-    </p>
-
-    <!-- Skills banners -->
 <div class="skills-container">
   <!-- Programming banner -->
   <div class="skills-banner">
     <h3>Programming</h3>
-    <div style="font-size:40px; text-align:center;">
+    <div>
       <i class="fa-brands fa-r-project" title="R"></i>
       <i class="fa-brands fa-python" title="Python"></i>
       <i class="fa-solid fa-database" title="SQL"></i>
@@ -92,14 +110,23 @@
   <!-- Tools banner -->
   <div class="skills-banner">
     <h3>Tools</h3>
-    <div style="font-size:40px; text-align:center;">
+    <div>
+      <i class="fa-solid fa-file-word" title="MS Office (with VBA)"></i>
       <i class="si si-latex" title="LaTeX"></i>
-      <i class="fa-solid fa-file-excel" title="MS Excel/VBA"></i>
       <i class="si si-tableau" title="Tableau"></i>
-      <i class="fa-solid fa-file-word" title="MS Office"></i>
     </div>
   </div>
 </div>
+
+  <!-- Social icons -->
+  <div style="text-align:center; margin-top:40px;">
+    <a href="mailto:mallika.sharma@ucalgary.ca" target="_blank">
+      <i class="fas fa-envelope" style="font-size:50px; margin:0 15px; color:#333;"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/mallikasharma15" target="_blank">
+      <i class="fab fa-linkedin" style="font-size:50px; margin:0 15px; color:#0077b5;"></i>
+    </a>
+  </div>
 
 </body>
 </html>
