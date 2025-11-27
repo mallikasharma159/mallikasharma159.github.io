@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Simple Icons CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/css/simple-icons.min.css">
   <style>
     .about-container {
       display: flex;
-      align-items: flex-start;
+      align-items: center;   /* ✅ centers image vertically with text */
       max-width: 1000px;
       margin: 40px auto;
       gap: 40px;
@@ -50,7 +48,7 @@
       text-align: center;
       font-size: 40px;
     }
-    .skills-banner i {
+    .skills-banner i, .skills-banner img, .skills-banner span {
       margin: 10px;
     }
   </style>
@@ -69,9 +67,9 @@
 
   <!-- About section with photo on left -->
   <div class="about-container">
-  <img src="mallikasharma.JPG" alt="Mallika Sharma">
-  <div class="about-text">
-    <h1>About Me</h1>
+    <img src="mallikasharma.JPG" alt="Mallika Sharma">
+    <div class="about-text">
+      <h1>About Me</h1>
       <p>
         I am a Ph.D. candidate in Economics specializing in energy and environmental economics, with both professional and academic grounding in energy and environmental policy. 
         I bring experience to the evolving landscape of sustainable transportation, mainly electric vehicles and public infrastructure policy. 
@@ -91,32 +89,35 @@
 
   <!-- Skills section -->
   <h2 style="text-align:center; margin-top:40px;">Skills</h2>
-<p style="text-align:center;">
-  Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
-</p>
+  <p style="text-align:center;">
+    Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
+  </p>
 
-<div class="skills-container">
-  <!-- Programming banner -->
-  <div class="skills-banner">
-    <h3>Programming</h3>
-    <div>
-      <i class="fa-brands fa-r-project" title="R"></i>
-      <i class="fa-brands fa-python" title="Python"></i>
-      <i class="fa-solid fa-database" title="SQL"></i>
-      <i class="si si-stata" title="STATA"></i>
+  <div class="skills-container">
+    <!-- Programming banner -->
+    <div class="skills-banner">
+      <h3>Programming</h3>
+      <div>
+        <i class="fa-brands fa-r-project" title="R"></i>
+        <i class="fa-brands fa-python" title="Python"></i>
+        <i class="fa-solid fa-database" title="SQL"></i>
+        <i class="fa-solid fa-chart-line" title="STATA"></i>
+      </div>
+    </div>
+
+    <!-- Tools banner -->
+    <div class="skills-banner">
+      <h3>Tools</h3>
+      <div>
+        <!-- Use your downloaded Excel image -->
+        <img src="office icon.png" alt="Microsoft Excel (with VBA)" title="Microsoft Excel (with VBA)" style="width:40px; vertical-align:middle;">
+        <!-- Plain text for LaTeX -->
+        <span style="font-size:20px;" title="LaTeX">LaTeX</span>
+        <!-- Tableau icon via Font Awesome -->
+        <i class="fa-solid fa-chart-pie" title="Tableau"></i>
+      </div>
     </div>
   </div>
-
-  <!-- Tools banner -->
-  <div class="skills-banner">
-    <h3>Tools</h3>
-    <div>
-      <i class="fa-solid fa-file-word" title="MS Office (with VBA)"></i>
-      <i class="si si-latex" title="LaTeX"></i>
-      <i class="si si-tableau" title="Tableau"></i>
-    </div>
-  </div>
-</div>
 
   <!-- Social icons -->
   <div style="text-align:center; margin-top:40px;">
