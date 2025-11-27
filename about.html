@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mallika Sharma | Economics, UCalgary</title>
+  <title>About Me | Mallika Sharma</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.7;
+      font-size: 18px;
+    }
     .about-container {
       display: flex;
       align-items: center;   /* ✅ centers image vertically with text */
@@ -22,15 +27,21 @@
     }
     .about-text {
       flex: 1;
-      font-size: 18px;
-      line-height: 1.7;
       text-align: justify;
+    }
+    .skills-wrapper {
+      background-color: #e6f0ff;   /* soft blue background */
+      border-radius: 12px;         /* rounded corners */
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .skills-container {
       display: flex;
       justify-content: center;
       gap: 40px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
     .skills-banner {
       background-color: #f0f4f8;
@@ -88,49 +99,44 @@
   </div>
 
   <!-- Skills section -->
-  <h2 style="text-align:center; margin-top:40px;">Skills</h2>
-  <p style="text-align:center;">
-    Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
-  </p>
+  <div class="skills-wrapper">
+    <h2 style="text-align:center;">Skills</h2>
+    <p style="text-align:center;">
+      Economic modelling techniques, Randomized Controlled Trials (RCTs), including running power analyses.
+    </p>
 
-  <div class="skills-container">
-    <!-- Programming banner -->
-    <div class="skills-banner">
-      <h3>Programming</h3>
-      <div>
-        <i class="fa-brands fa-r-project" title="R"></i>
-        <i class="fa-brands fa-python" title="Python"></i>
-        <i class="fa-solid fa-database" title="SQL"></i>
-        <i class="fa-solid fa-chart-line" title="STATA"></i>
+    <div class="skills-container">
+      <!-- Programming banner -->
+      <div class="skills-banner">
+        <h3>Programming</h3>
+        <div>
+          <i class="fa-brands fa-r-project" title="R"></i>
+          <i class="fa-brands fa-python" title="Python"></i>
+          <i class="fa-solid fa-database" title="SQL"></i>
+          <img src="stata.png" alt="STATA" title="STATA" style="width:40px; vertical-align:middle;">
+        </div>
+      </div>
+
+      <!-- Tools banner -->
+      <div class="skills-banner">
+        <h3>Tools</h3>
+        <div>
+          <img src="excel.png" alt="Microsoft Excel (with VBA)" title="Microsoft Excel (with VBA)" style="width:40px; vertical-align:middle;">
+          <span style="font-size:20px;" title="LaTeX">LaTeX</span>
+          <img src="tableau.png" alt="Tableau" title="Tableau" style="width:40px; vertical-align:middle;">
+        </div>
       </div>
     </div>
 
-<!-- Tools banner -->
-<div class="skills-banner">
-  <h3>Tools</h3>
-  <div>
-    <!-- Microsoft Excel (with VBA) -->
-    <img src="office icon.png" alt="All and Excel (with VBA)" title="All and Excel (with VBA)" style="width:40px; vertical-align:middle; margin:10px;">
-    
-    <!-- LaTeX (plain text) -->
-    <span style="font-size:20px; margin:10px;" title="LaTeX">LaTeX</span>
-    
-    <!-- STATA (uploaded PNG) -->
-    <img src="stata icon.png" alt="STATA" title="STATA" style="width:40px; vertical-align:middle; margin:10px;">
-    
-    <!-- Tableau (uploaded PNG) -->
-    <img src="tableau icon.png" alt="Tableau" title="Tableau" style="width:40px; vertical-align:middle; margin:10px;">
-  </div>
-</div>
-
-  <!-- Social icons -->
-  <div style="text-align:center; margin-top:40px;">
-    <a href="mailto:mallika.sharma@ucalgary.ca" target="_blank">
-      <i class="fas fa-envelope" style="font-size:50px; margin:0 15px; color:#333;"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/mallikasharma15" target="_blank">
-      <i class="fab fa-linkedin" style="font-size:50px; margin:0 15px; color:#0077b5;"></i>
-    </a>
+    <!-- Social icons BELOW the skills banner -->
+    <div style="text-align:center; margin-top:30px;">
+      <a href="mailto:mallika.sharma@ucalgary.ca" target="_blank">
+        <i class="fas fa-envelope" style="font-size:50px; margin:0 15px; color:#333;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mallikasharma15" target="_blank">
+        <i class="fab fa-linkedin" style="font-size:50px; margin:0 15px; color:#0077b5;"></i>
+      </a>
+    </div>
   </div>
 
 </body>
